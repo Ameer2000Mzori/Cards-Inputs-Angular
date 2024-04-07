@@ -1,0 +1,15 @@
+<p>card works!</p>
+<div></div>
+<p>{{ title }}</p>
+<p>{{ data }}</p>
+<p>{{ id }}</p>
+<p>{{ type }}</p>
+<button (click)="deleteData(id)">remove info</button>
+<button (click)="getData(type)">get info</button>
+
+@if(!img) {
+<img style="height: 250px; width: 300px" alt="data-img" />
+} @else{
+<img src="{{ img }}" alt="" />
+
+}

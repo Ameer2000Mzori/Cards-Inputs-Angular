@@ -19,16 +19,16 @@
       gap: 15px;
     "
   >
-    <p>{{ data.title }}</p>
-    <p>{{ data.data }}</p>
-    <p>{{ data.id }}</p>
-    <p>{{ data.type }}</p>
-    @if(!data?.image){
-    <img style="height: 250px; width: 300px" alt="data-img" />
-    }@else{
-    <img src="{{ data?.image }}" alt="" /> }
-    <button (click)="getData(data)">get info</button>
-    <button (click)="deleteData(data)">remove info</button>
+    <app-card
+      [title]="data.title"
+      [data]="data.data"
+      [id]="data.id"
+      [type]="data.type"
+      [img]="data.image"
+      (cardData)="getData($event)"
+      (cardId)="deleteData($event)"
+    ></app-card>
   </div>
+
   }
 </div>
