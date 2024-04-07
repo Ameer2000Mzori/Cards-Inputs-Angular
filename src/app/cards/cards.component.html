@@ -1,12 +1,23 @@
-@for(data of datas; track data.id){
-<p>{{ data.title }}</p>
-<p>{{ data.data }}</p>
-<p>{{ data.id }}</p>
-<p>{{ data.type }}</p>
-@if(!data?.image){
-<p>No image</p>
-}@else{
-<img src="{{ data?.image }}" alt="" /> }
-<button (click)="getData(data)">get info</button>
-<button (click)="deleteData(data)">get info</button>
-}
+<div
+  style="
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+  "
+>
+  @for(data of datas; track data.id){
+  <p>{{ data.title }}</p>
+  <p>{{ data.data }}</p>
+  <p>{{ data.id }}</p>
+  <p>{{ data.type }}</p>
+  @if(!data?.image){
+  <p>No image</p>
+  }@else{
+  <img src="{{ data?.image }}" alt="" /> }
+  <button (click)="getData(data)">get info</button>
+  <button (click)="deleteData(data)">remove info</button>
+  }
+</div>
