@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Navigation-Nation is a website crafted using HTML, CSS, and JavaScript, with the added benefit of linters to address any errors in the code, and it's built with Webpack as its primary focus. This project leverages advanced CSS and JavaScript coding techniques. Feel free to explore the demo link.
+> "Cards-Inputs-Angular" is a website made with Angular and SCSS for styling. This project aims to demonstrate the proper usage of Input and Output in Angular for learning purposes. For more information, please download the project or check out sample images.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
