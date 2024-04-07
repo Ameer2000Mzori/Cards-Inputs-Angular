@@ -9,15 +9,26 @@
   "
 >
   @for(data of datas; track data.id){
-  <p>{{ data.title }}</p>
-  <p>{{ data.data }}</p>
-  <p>{{ data.id }}</p>
-  <p>{{ data.type }}</p>
-  @if(!data?.image){
-  <p>No image</p>
-  }@else{
-  <img src="{{ data?.image }}" alt="" /> }
-  <button (click)="getData(data)">get info</button>
-  <button (click)="deleteData(data)">remove info</button>
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    "
+  >
+    <p>{{ data.title }}</p>
+    <p>{{ data.data }}</p>
+    <p>{{ data.id }}</p>
+    <p>{{ data.type }}</p>
+    @if(!data?.image){
+    <img style="height: 250px; width: 300px" alt="data-img" />
+    }@else{
+    <img src="{{ data?.image }}" alt="" /> }
+    <button (click)="getData(data)">get info</button>
+    <button (click)="deleteData(data)">remove info</button>
+  </div>
   }
 </div>
